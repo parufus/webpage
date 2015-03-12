@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  div
+    h2 I provide the following services:
+    each service, i in services
+      h3 #{services[i].serviceTitle}
+        span.serviceCostSpan $#{services[i].serviceCost}
+      p.serviceDescription #{services[i].serviceDescription}

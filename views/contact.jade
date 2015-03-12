@@ -1,0 +1,66 @@
+extends layout
+
+block content
+  script.
+    var mybrookCenter=new google.maps.LatLng(42.34143,-71.1253136);
+      function initialize()
+        {
+          var mapProp = {
+            center:mybrookCenter,
+            zoom:17,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+    var map=new google.maps.Map(document.getElementById("map-canvas"),mapProp);
+    var marker=new google.maps.Marker({
+      position:mybrookCenter,
+      });
+    marker.setMap(map);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  script.
+    var myCenter=new google.maps.LatLng(42.3750,-71.15093);
+      function initialize()
+        {
+          var mapProp = {
+            center:myCenter,
+            zoom:15,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+    var map=new google.maps.Map(document.getElementById("cambridge"),mapProp);
+    var marker=new google.maps.Marker({
+      position:myCenter
+      });
+    marker.setMap(map);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  h3 Location and contact information
+  hr
+  div.contactInfo
+    h3 Contact Information
+    h5 Phone: 617 499 2957
+    h5 email: parufus AT gmail DOT com
+    h5 Mailing Address: 1408 Beacon Street, Brookline MA 02446
+    h5 <a href='https://www.facebook.com/pages/Par-Scott-Acupuncture-Massage-and-Herbal-Medicine/195710173789930?ref=aymt_homepage_panel'>Contact or message me on Facebook</a>
+
+  div.contactOfficeContainer
+    div.officeWordsContainer
+      h3 In Brookline at
+      p Center For Complementary Medicine
+      p 1408 Beacon Street
+      p Brookline MA 02446
+      p <b>MBTA:</b> Summit Avenue stop, <a href='http://www.mbta.com/schedules_and_maps/subway/lines/stations/?stopId=15627&lat=42.340946&lng=-71.125182'>Green C line</a>
+      P <b>Parking:</b> Metered street parking on Beacon Street, or the public lot just off Beacon on Centre Street
+      p <b>Directions:</b>Click on the Google logo in the bottom left corner of the map for interactive directions to this location.
+    div.officeMapContainer#map-canvas
+  div.contactOfficeContainer
+    div.officeWordsContainer
+      h3 In Cambridge at
+      p Om Namo Yoga Center
+      p 19 Belmont Street
+      p Cambridge MA 02138
+      p <b>MBTA:</b> <a href='http://www.mbta.com/schedules_and_maps/bus/routes/?route=71'>Route 71 bus</a> to St. Mary's Street or <a href='http://www.mbta.com/schedules_and_maps/bus/routes/?route=73'>Route 73 bus</a> to Cushing Street
+      p <b>Parking:</b> Free 2 hour parking on Belmont Street and several marked spaces in the lot to the left of the office
+      p <b>Directions:</b>Click on the Google logo in the bottom left corner of the map for interactive directions to this location.
+    div.officeMapContainer#cambridge
+
+

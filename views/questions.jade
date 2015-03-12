@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h3 A test page for dynamically generated question sets
+  div.homeTextContainer
+    each question,i in questions
+      case questions[i].questionType
+        when 'setHead'
+          h3 #{questions[i].questionText}
+          hr.bold
+          br
+        when 'shortAnswer'
+          p #{i} #{questions[i].questionText}
+          label Briefly describe any issues here
+            input(type-'text' placeholder='#{questions[i].answerPlaceholder}' name='#{questions[i].questionText}')
+            hr.light
+            br
+        when 'numerical'
+          p #{i} #{questions[i].questionText}
+            input(type='number' required=true pattern='')
+            hr.light
+            br
+        when 'numericalRange'
+          p #{i} #{questions[i].questionText}
+            label from
+            input(type='text')
+            label to
+            input(type='text')

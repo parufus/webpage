@@ -1,0 +1,113 @@
+/*General Page Settings*/
+body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+    background-color: #99FF66;
+
+}
+
+/*Development div setting for checking alignments*/
+/*
+div{
+    border:1px solid red;
+
+}
+
+a {
+  color: darkgreen;
+}
+*/
+/*HEADER AND NAVIGATION*/
+div.header{
+    height: 50px;
+    border-bottom: 5px solid black;
+}
+
+div.logoDiv{
+    float: left;
+}
+div.headerBuffer{
+    min-width: 20px;
+    buffer:10px;
+}
+div.titleDiv{
+    float: left;
+}
+div.linksDiv{
+    float: right;
+    padding:7px;
+}
+p.linkList{
+    padding:10px;
+}
+.logoImage{
+    height: 48px;
+}
+
+/*PAGE BODY*/
+div.pageBody{
+    margin:10px;
+}
+
+/*SERVICES*/
+span.serviceCostSpan{
+    float:right;
+}
+/*HOME/index*/
+div.homeTextContainer{
+    width:50%;
+    min-width: 300px;
+}
+/*CONTACT PAGE*/
+div.contactOfficeContainer{
+    display:inline-block;
+}
+div.contactInfo{
+    float:right;
+}
+
+div.officeWordsContainer{
+    float:left;
+    min-width: 300px;
+    max-width: 450px;
+}
+div.officeMapContainer{
+    float:left;
+}
+#map-canvas{
+    width:350px;
+    height:350px;
+    background-color:red;
+}
+#cambridge{
+    width:350px;
+    height:350px;
+    color:red;
+}
+
+/*QUestions Page*/
+hr.bold{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
