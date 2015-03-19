@@ -62,6 +62,6 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
-app.listen(process.env.PORT || 5000, function() {
-    console.log("listening on 3000");
-}
+app.listen(app.get('port'), function() {
+    console.log("Node app is running at localhost:" + app.get('port'));
+});
