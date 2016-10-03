@@ -20,6 +20,11 @@ router.get('/gmt', function(req, res) {
     res.render('gmt',{title:"GMT"});
 });
 
+/* GET gmt page. */
+router.get('/marma', function(req, res) {
+    res.render('marma',{title:"Marma"});
+});
+
 
 
 /* GET about page. */
